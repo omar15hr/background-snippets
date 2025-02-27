@@ -13,17 +13,14 @@ function App() {
   });
 
   const SNIPPETS: Background[] = [
-    { backgroundImage: "linear-gradient(to right, #7877c6, #f5f5f5)" },
+    
+    { backgroundImage: "linear-gradient(150deg, #0093E9 30%, #80D0C7 78%)" },
     { backgroundImage: "linear-gradient(to right, #1E1F23, #E1E2E3)" },
     { backgroundImage: "linear-gradient(to right, #101010, #7877c6)" },
     { backgroundImage: "radial-gradient(circle, #7877c6, #f5f5f5)" },
-    { backgroundImage: "radial-gradient(circle,rgb(104, 177, 211),rgb(39, 84, 110))" },
-    { backgroundImage: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)" },
+    { backgroundImage: "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(35,35,74,1) 35%, rgba(89,131,146,1) 100%)" },
     { backgroundImage: "linear-gradient(to top, #30cfd0 0%, #330867 100%)" },
-    { backgroundImage: "radial-gradient(circle farthest-corner at 96.1% 7.2%, rgba(9,178,62,1) 0%, rgba(19,19,19,1) 100.2%)" },
-    { backgroundImage: 'radial-gradient( circle farthest-corner at 10% 20%,  rgba(242,11,54,1) 12.2%, rgba(237,52,163,1) 84.8% )'},
     { backgroundImage: 'linear-gradient(to top, #6a85b6 0%, #bac8e0 100%)' },
-    { backgroundImage: 'linear-gradient(to top, #a3bded 0%, #6991c7 100%)' },
     { backgroundImage: 'linear-gradient(-225deg, #CBBACC 0%, #2580B3 100%)' },
   ];
 
@@ -51,7 +48,7 @@ function App() {
     <div style={background}>
       <div className="max-w-6xl mx-auto flex flex-col gap-10 text-white">
         <div className="max-w-3xl flex flex-col items-center justify-center mt-10 mb-10 mx-auto">
-          <h1 className="text-4xl md:text-7xl sm:text-2xl mt-10 text-center">
+          <h1 className="text-4xl md:text-7xl sm:text-2xl mt-10 text-center p-2">
             Collection of modern, background snippets
           </h1>
           <p className="text-lg md:text-xl sm:text-lg mt-6 p-3 text-center">
