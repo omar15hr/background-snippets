@@ -1,43 +1,27 @@
-import { useState } from "react";
+import { BACKGROUND_OPTIONS } from "./Background";
+import Playground from "./Playground";
 
 interface BackgroundCardProps {
-  styles: string;
-  onPreview: (styles: string) => void;
+  setPreview: (preview: React.ReactNode) => void;
+  setTheme: (theme: 'light' | 'dark') => void;
 }
 
-export function BackgroundCard({ styles, onPreview }: BackgroundCardProps) {
-  const [copied, setCopied] = useState(false);
-
-  const codeSnippet = `<div className="${styles}"></div>`;
-
-  const handleCopy = async () => {
-    await navigator.clipboard.writeText(codeSnippet);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
-  const handlePreview = () => {
-    onPreview(styles);
-  };
-
-  const buttonStyles = `bg-[#101010] text-white rounded-lg hover:bg-[#222222] cursor-pointer p-2 text-xs`
+export function BackgroundCard({ setPreview, setTheme }: BackgroundCardProps) {
 
   return (
-    <div className={`flex fle-row h-50 w-full rounded-lg ${styles}`}>
-      <div className='flex flex-row justify-start items-start p-2 gap-2'>
-      <button
-        onClick={handleCopy}
-        className={buttonStyles}
-      >
-        {copied ? "Copied!" : "Copy Code"}
-      </button>
-      <button
-        onClick={handlePreview}
-        className={buttonStyles}
-      >
-        Preview
-      </button>
-    </div>
-    </div>
+    <div className="grid grid-cols-1 gap-6 pb-6 md:grid-cols-2 lg:grid-cols-4">
+              {BACKGROUND_OPTIONS.map((background, index) => {
+                return (
+                  <Playground
+                    key={index}
+                    setPreview={setPreview}
+                    theme={background.theme}
+                    setTheme={setTheme}
+                  >
+                    {background.component}
+                  </Playground>
+                );
+              })}
+            </div>
   );
 }
