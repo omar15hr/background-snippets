@@ -1,17 +1,3 @@
-const BgLightGrid1 = () => {
-  return (
-    <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]" />
-  );
-};
-
-const BgLightGrid2 = () => {
-  return (
-    <div className="relative h-full w-full bg-white">
-      <div className="absolute h-full w-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
-    </div>
-  );
-};
-
 const BgLightGrid5 = () => {
   return (
     <div className="relative h-full w-full bg-white">
@@ -54,21 +40,9 @@ const BgLightGrid4 = () => {
   );
 };
 
-const BgLightGradient2 = () => {
-  return (
-    <div className="absolute top-0 z-[-2] h-screen w-screen rotate-180 transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]" />
-  );
-};
-
 const BgDarkGradient2 = () => {
   return (
     <div className="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-  );
-};
-
-const BgLightGradient3 = () => {
-  return (
-    <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)]" />
   );
 };
 
@@ -77,18 +51,6 @@ const BgLightGradient4 = () => {
     <div className="absolute top-0 -z-10 h-full w-full bg-white">
       <div className="absolute bottom-auto left-auto right-0 top-0 h-[500px] w-[500px] -translate-x-[30%] translate-y-[20%] rounded-full bg-[rgba(173,109,244,0.5)] opacity-50 blur-[80px]" />
     </div>
-  );
-};
-
-const BgLightGradient5 = () => {
-  return (
-    <div className="absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]" />
-  );
-};
-
-const BgLightGradient6 = () => {
-  return (
-    <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]" />
   );
 };
 
@@ -163,28 +125,8 @@ export const BACKGROUND_OPTIONS = [
     theme: 'light',
   },
   {
-    name: 'Background Light Gradient 2',
-    component: <BgLightGradient2 />,
-    theme: 'light',
-  },
-  {
-    name: 'Background Light Gradient 3',
-    component: <BgLightGradient3 />,
-    theme: 'light',
-  },
-  {
     name: 'Background Light Gradient 4',
     component: <BgLightGradient4 />,
-    theme: 'light',
-  },
-  {
-    name: 'Background Light Gradient 5',
-    component: <BgLightGradient5 />,
-    theme: 'light',
-  },
-  {
-    name: 'Background Light Gradient 6',
-    component: <BgLightGradient6 />,
     theme: 'light',
   },
   {
@@ -195,16 +137,6 @@ export const BACKGROUND_OPTIONS = [
   {
     name: 'Background Light Grid Gradient 2',
     component: <BgLightGridGradient2 />,
-    theme: 'light',
-  },
-  {
-    name: 'Background Light Grid ',
-    component: <BgLightGrid1 />,
-    theme: 'light',
-  },
-  {
-    name: 'Background Light Grid 2',
-    component: <BgLightGrid2 />,
     theme: 'light',
   },
   {

@@ -15,7 +15,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="ml-1 text-neutral-950 dark:text-neutral-100"
           >
-            @Ibelick
+            @Omar_Hrn
           </a>
         </span>
       </div>

@@ -19,7 +19,6 @@ function App() {
           <Header />
           <div className="overflow-hidden px-4 pb-20 pt-52 md:px-10">
             <BackgroundCard setPreview={setPreview} setTheme={setTheme} />
-            
           </div>
           <Footer />
         </div>
