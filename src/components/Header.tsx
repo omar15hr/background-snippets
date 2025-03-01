@@ -1,4 +1,8 @@
-export function Header() {
+interface HeaderProps {
+  resetBackground: () => void;
+}
+
+export function Header({ resetBackground }: HeaderProps) {
   return (
     <div className="pt-10">
       <div className="relative mx-auto flex max-w-2xl flex-col items-center">
@@ -19,7 +23,10 @@ export function Header() {
           >
             Go to Github
           </a>
-          <button className="bg-[#dddbdb] p-2 rounded-full w-40 cursor-pointer hover:opacity-90">
+          <button
+            onClick={resetBackground}
+            className="bg-[#dddbdb] p-2 rounded-full w-40 cursor-pointer hover:opacity-90"
+          >
             Reset background
           </button>
         </div>
